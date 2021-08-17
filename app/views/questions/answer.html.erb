@@ -1,0 +1,19 @@
+<div class="container">
+  <h2> Stupid Coaching </h2>
+  <div class="p-3 border-gray mb-3">
+      <p><%=@question%></p>
+      <p>-You</p>
+
+  </div>
+  <div class="bg-warning p-3 border-gray">
+      <strong><p><%=@answer%></p></strong>
+      <p>-Your Coach</p>
+  </div>
+  <%= link_to "volver a preguntar", ask_path, class: "btn btn-primary mt-5"%>
+</div>
+
+<style>
+.border-gray{
+  border-left: 7px solid lightgray;
+}
+</style>
